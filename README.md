@@ -1,7 +1,8 @@
 # RAG-based QA Bot with Interactive Interface
 
 
-![Project image](C:/Users/Dell/Pictures/Screenshots/Screenshot (23).png)
+![Project image](file:///C:/Users/Dell/Pictures/Screenshots/Screenshot%20(23).png)
+
 
 
 
@@ -41,8 +42,8 @@ The RAG-based QA system is divided into two main parts:
 
 - **Model Architecture**:
   
-- Document Ingestion -> 2. Text Preprocessing -> 3. Document Embedding Creation -> 4. Vector Storage in Pinecone -> 5. User Query -> 6. Query Embedding -> 7. Embedding Matching in Pinecone -> 8. Segment 
-  Retrieval -> 9. Response Generation -> 10. User Interaction via Frontend
+- Document Ingestion ------> 2. Text Preprocessing -----> 3. Document Embedding Creation -------> 4. Vector Storage in Pinecone -----> 5. User Query ------> 6. Query Embedding ------> 7. Embedding Matching in 
+  Pinecone --------> 8. Segment Retrieval -------> 9. Response Generation --------> 10. User Interaction via Frontend
 
 - **Backend (QA Pipeline)**:
   - **Data Loading & Preprocessing**: The system reads and processes documents (PDF, text) and extracts content.
