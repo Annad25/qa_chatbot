@@ -33,12 +33,12 @@ The bot is accessible through a user-friendly web interface built using Streamli
 
 ### Key Features:
 - Retrieval-augmented question answering using Pinecone DB.
-- Generation of human-like responses using Cohere or an alternative generative model.
+- Generation of human-like responses using OpenAI or an alternative generative model.
 - Real-time user interaction through an intuitive web interface.
 - Ability to handle multiple queries efficiently.
 
 ## 2. Architecture Overview <a name="architecture-overview"></a>
-The RAG-based QA system is divided into two main parts:
+The RAG-based QA system is divided into three main parts:
 
 - **Model Architecture**:
   
@@ -81,7 +81,7 @@ To run this project locally, follow these steps:
 
    ```bash
    PINECONE_API_KEY=your_pinecone_api_key
-   OPENAI_API_KEY=your_cohere_api_key
+   OPENAI_API_KEY=your_openai_api_key
 
 
 ## Using Google Colab <a name="using-google-colab"></a>
@@ -104,7 +104,7 @@ When a user asks a question, the query is also converted into an embedding.
 This query embedding is matched against the stored document embeddings in Pinecone to retrieve the most relevant segments.
 
 ### Generation Process <a name="generation-process"></a>
-The retrieved document segments are sent to the generative model (e.g., Cohere API).  
+The retrieved document segments are sent to the generative model (e.g., openai API).  
 The model uses the retrieved data to generate a coherent response to the user's question.
 
 ## 5. Frontend Interface <a name="frontend-interface"></a>
@@ -168,7 +168,7 @@ Access the application at [http://localhost:8501](http://localhost:8501).
 
 
 ## Conclusion <a name="conclusion"></a>
-This project demonstrates a robust QA bot built using Retrieval-Augmented Generation (RAG). By integrating Pinecone for document retrieval and Cohere for response generation, the bot provides accurate and coherent answers in real-time. The interactive frontend allows users to easily upload documents and engage with the bot, making it a useful tool for answering document-based questions.
+This project demonstrates a robust QA bot built using Retrieval-Augmented Generation (RAG). By integrating Pinecone for document retrieval and OpenAI for response generation, the bot provides accurate and coherent answers in real-time. The interactive frontend allows users to easily upload documents and engage with the bot, making it a useful tool for answering document-based questions.
 
 
 
